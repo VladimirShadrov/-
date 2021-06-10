@@ -1,0 +1,120 @@
+@import './styles.scss';
+
+.list {
+  &__title {
+    font-weight: 400;
+    padding: 35px 0 25px 0;
+    border-bottom: 1px solid $border-color;
+  }
+
+  &__item-wrapper {
+    border-bottom: 1px solid $border-color;
+    padding: 28px 0;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    & ~ .list__checkbox-item:first-child {
+      margin-top: 36px;
+    }
+  }
+
+  &__selector,
+  &__selector-active {
+    width: 20px;
+    height: 20px;
+    background: url('../images/plus-big.png') center / 80% no-repeat;
+    margin-right: 15px;
+    pointer-events: none;
+  }
+
+  &__selector-active {
+    background: url('../images/minus-big.png') center / 80% no-repeat;
+  }
+
+  &__item-title {
+    line-height: 20px;
+    font-weight: 600;
+  }
+
+  &__checkbox-item,
+  &__inside-checkbox-item,
+  &__checkbox-item-single {
+    display: flex;
+    align-items: center;
+    margin: 22px 0;
+    cursor: pointer;
+  }
+
+  &__checkbox,
+  &__inside-checkbox,
+  &__checkbox-active,
+  &__inside-checkbox-checked {
+    width: 20px;
+    height: 20px;
+    border: 1px solid $border-checkbox-color;
+    margin-right: 15px;
+    pointer-events: none;
+  }
+
+  &__checkbox-checked,
+  &__inside-checkbox-checked {
+    background: url('../images/checked.png') center / cover no-repeat;
+  }
+
+  &__checkbox-item-single {
+    margin: 0;
+  }
+
+  &__inside-list-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+
+  &__inside-selector,
+  &__inside-selector-active {
+    width: 20px;
+    height: 20px;
+    background: url('../images/plus-small.png') center / 60% no-repeat;
+    margin-right: 15px;
+    pointer-events: none;
+  }
+
+  &__inside-selector-active {
+    background: url('../images/minus-small.png') center / 60% no-repeat;
+  }
+
+  &__inside-item-title {
+    pointer-events: none;
+  }
+
+  &__inside-container {
+    padding-left: 100px;
+    padding-bottom: 15px;
+  }
+
+  &__inside-checkbox-item:first-child {
+    position: relative;
+    margin: 11px 0;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -90px;
+      bottom: 12px;
+      width: 70px;
+      height: 15px;
+      border-left: 1px solid $pseudo-element-color;
+      border-bottom: 1px solid $pseudo-element-color;
+    }
+  }
+
+  &__item-empty {
+    padding-top: 20px;
+  }
+}

@@ -82,6 +82,8 @@ h6 {
 
 $main-text-color: #302f2d;
 $border-color: #e6e6e6;
+$border-checkbox-color: #d0cfcc;
+$pseudo-element-color: #c4c4c4;
 
 body {
   font-family: Futura-PT, sans-serif;
@@ -94,4 +96,8 @@ body {
   max-width: 790px;
   margin: 0 auto;
   padding: 0 50px;
+}
+
+.hide {
+  display: none;
 }

@@ -82,6 +82,9 @@ body {
   margin: 0 auto;
   padding: 0 50px; }
 
+.hide {
+  display: none; }
+
 @font-face {
   font-family: Futura-PT;
   src: url("../fonts/futura-pt-medium.woff") format("woff"), url("../fonts/futura-pt-medium.woff2") format("woff2"); }
@@ -166,12 +169,202 @@ body {
   margin: 0 auto;
   padding: 0 50px; }
 
+.hide {
+  display: none; }
+
 .header {
   padding: 37px 0 39px 0;
   border-bottom: 1px solid #e6e6e6; }
   .header__title {
     font-size: 25px;
-    font-weight: 500; }
+    font-weight: 600; }
+
+@font-face {
+  font-family: Futura-PT;
+  src: url("../fonts/futura-pt-medium.woff") format("woff"), url("../fonts/futura-pt-medium.woff2") format("woff2"); }
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:focus,
+:active {
+  outline: none; }
+
+a:focus,
+a:active {
+  outline: none; }
+
+nav,
+footer,
+header,
+aside {
+  display: block; }
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px; }
+
+input,
+button,
+textarea {
+  font-family: inherit; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a,
+a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400; }
+
+body {
+  font-family: Futura-PT, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  color: #302f2d; }
+
+.container {
+  max-width: 790px;
+  margin: 0 auto;
+  padding: 0 50px; }
+
+.hide {
+  display: none; }
+
+.list__title {
+  font-weight: 400;
+  padding: 35px 0 25px 0;
+  border-bottom: 1px solid #e6e6e6; }
+
+.list__item-wrapper {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 28px 0; }
+
+.list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer; }
+  .list__item ~ .list__checkbox-item:first-child {
+    margin-top: 36px; }
+
+.list__selector, .list__selector-active {
+  width: 20px;
+  height: 20px;
+  background: url("../images/plus-big.png") center/80% no-repeat;
+  margin-right: 15px;
+  pointer-events: none; }
+
+.list__selector-active {
+  background: url("../images/minus-big.png") center/80% no-repeat; }
+
+.list__item-title {
+  line-height: 20px;
+  font-weight: 600; }
+
+.list__checkbox-item, .list__inside-checkbox-item, .list__checkbox-item-single {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 22px 0;
+  cursor: pointer; }
+
+.list__checkbox, .list__inside-checkbox, .list__checkbox-active, .list__inside-checkbox-checked {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #d0cfcc;
+  margin-right: 15px;
+  pointer-events: none; }
+
+.list__checkbox-checked, .list__inside-checkbox-checked {
+  background: url("../images/checked.png") center/cover no-repeat; }
+
+.list__checkbox-item-single {
+  margin: 0; }
+
+.list__inside-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+  cursor: pointer; }
+
+.list__inside-selector, .list__inside-selector-active {
+  width: 20px;
+  height: 20px;
+  background: url("../images/plus-small.png") center/60% no-repeat;
+  margin-right: 15px;
+  pointer-events: none; }
+
+.list__inside-selector-active {
+  background: url("../images/minus-small.png") center/60% no-repeat; }
+
+.list__inside-item-title {
+  pointer-events: none; }
+
+.list__inside-container {
+  padding-left: 100px;
+  padding-bottom: 15px; }
+
+.list__inside-checkbox-item:first-child {
+  position: relative;
+  margin: 11px 0; }
+  .list__inside-checkbox-item:first-child::before {
+    content: '';
+    position: absolute;
+    left: -90px;
+    bottom: 12px;
+    width: 70px;
+    height: 15px;
+    border-left: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4; }
+
+.list__item-empty {
+  padding-top: 20px; }
 
 
 /*# sourceMappingURL=styles.css.map*/
