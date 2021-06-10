@@ -85,6 +85,13 @@ body {
 .hide {
   display: none; }
 
+@media (max-width: 600px) {
+  .container {
+    padding: 0 15px; }
+  body {
+    font-size: 18px;
+    line-height: 20px; } }
+
 @font-face {
   font-family: Futura-PT;
   src: url("../fonts/futura-pt-medium.woff") format("woff"), url("../fonts/futura-pt-medium.woff2") format("woff2"); }
@@ -171,6 +178,13 @@ body {
 
 .hide {
   display: none; }
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 15px; }
+  body {
+    font-size: 18px;
+    line-height: 20px; } }
 
 .header {
   padding: 37px 0 39px 0;
@@ -179,6 +193,10 @@ body {
     font-size: 25px;
     font-weight: 600; }
 
+@media (max-width: 600px) {
+  .header {
+    padding: 20px 0; } }
+
 @font-face {
   font-family: Futura-PT;
   src: url("../fonts/futura-pt-medium.woff") format("woff"), url("../fonts/futura-pt-medium.woff2") format("woff2"); }
@@ -265,6 +283,13 @@ body {
 
 .hide {
   display: none; }
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 15px; }
+  body {
+    font-size: 18px;
+    line-height: 20px; } }
 
 .list__title {
   font-weight: 400;
@@ -285,6 +310,9 @@ body {
   cursor: pointer; }
   .list__item ~ .list__checkbox-item:first-child {
     margin-top: 36px; }
+
+.list__item-title {
+  pointer-events: none; }
 
 .list__selector, .list__selector-active {
   width: 20px;
@@ -321,7 +349,12 @@ body {
   background: url("../images/checked.png") center/cover no-repeat; }
 
 .list__checkbox-item-single {
-  margin: 0; }
+  margin: 0;
+  font-weight: 600; }
+
+.list__checkbox-title {
+  pointer-events: none;
+  width: 90%; }
 
 .list__inside-list-item {
   display: -webkit-box;
@@ -366,6 +399,29 @@ body {
 .list__item-empty {
   padding-top: 20px; }
 
+@media (max-width: 600px) {
+  .list__title,
+  .list__item-wrapper {
+    padding: 15px 0; }
+  .list__inside-container {
+    padding-bottom: 0; } }
+
+@media (max-width: 450px) {
+  .list__inside-container {
+    padding-left: 35px; }
+  .list__inside-checkbox-item:first-child::before {
+    left: -25px;
+    width: 20px; }
+  .list__selector,
+  .list__selector-active,
+  .list__checkbox,
+  .list__checkbox-checked,
+  .list__inside-checkbox,
+  .list__inside-checkbox-checked {
+    margin-right: 10px;
+    width: 15px;
+    height: 15px; } }
+
 @font-face {
   font-family: Futura-PT;
   src: url("../fonts/futura-pt-medium.woff") format("woff"), url("../fonts/futura-pt-medium.woff2") format("woff2"); }
@@ -452,6 +508,13 @@ body {
 
 .hide {
   display: none; }
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 15px; }
+  body {
+    font-size: 18px;
+    line-height: 20px; } }
 
 .footer {
   padding-top: 40px;
