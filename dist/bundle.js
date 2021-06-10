@@ -45,7 +45,7 @@ eval("\n\n__webpack_require__(/*! core-js/es6 */ \"../node_modules/core-js/es6/i
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/styles.scss */ \"./styles/styles.scss\");\n/* harmony import */ var _styles_header_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/header.scss */ \"./styles/header.scss\");\n/* harmony import */ var _styles_list_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/list.scss */ \"./styles/list.scss\");\n\n\n // Перенос изображений\n\n__webpack_require__(\"./images sync recursive \\\\.(png|jpg|svg|gif)$\");\n\n__webpack_require__(\"./fonts sync recursive \\\\.(ttf|woff|woff2)$\");\n\n//# sourceURL=webpack:///./js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/styles.scss */ \"./styles/styles.scss\");\n/* harmony import */ var _styles_header_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/header.scss */ \"./styles/header.scss\");\n/* harmony import */ var _styles_list_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/list.scss */ \"./styles/list.scss\");\n/* harmony import */ var _styles_footer_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/footer.scss */ \"./styles/footer.scss\");\n\n\n\n // Перенос изображений\n\n__webpack_require__(\"./images sync recursive \\\\.(png|jpg|svg|gif)$\");\n\n__webpack_require__(\"./fonts sync recursive \\\\.(ttf|woff|woff2)$\");\n\n//# sourceURL=webpack:///./js/index.js?");
 
 /***/ }),
 
@@ -4054,6 +4054,20 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"fonts/futura-pt-medium.woff2\");\n\n//# sourceURL=webpack:///./fonts/futura-pt-medium.woff2?");
+
+/***/ }),
+
+/***/ "./styles/footer.scss":
+/*!****************************!*\
+  !*** ./styles/footer.scss ***!
+  \****************************/
+/*! namespace exports */
+/*! exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.* */
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./styles/footer.scss?");
 
 /***/ }),
 
