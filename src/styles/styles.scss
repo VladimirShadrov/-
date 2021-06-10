@@ -1,3 +1,9 @@
+@font-face {
+  font-family: Futura-PT;
+  src: url('../fonts/futura-pt-medium.woff') format('woff'),
+    url('../fonts/futura-pt-medium.woff2') format('woff2');
+}
+
 // сброс стилей
 * {
   padding: 0;
@@ -72,4 +78,20 @@ h5,
 h6 {
   font-size: inherit;
   font-weight: 400;
+}
+
+$main-text-color: #302f2d;
+$border-color: #e6e6e6;
+
+body {
+  font-family: Futura-PT, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  color: $main-text-color;
+}
+
+.container {
+  max-width: 790px;
+  margin: 0 auto;
+  padding: 0 50px;
 }
