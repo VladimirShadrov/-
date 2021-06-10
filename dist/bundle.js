@@ -35,6 +35,40 @@ eval("\n\n__webpack_require__(/*! core-js/es6 */ \"../node_modules/core-js/es6/i
 
 /***/ }),
 
+/***/ "./js/data.js":
+/*!********************!*\
+  !*** ./js/data.js ***!
+  \********************/
+/*! namespace exports */
+/*! export data [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"data\": function() { return /* binding */ data; }\n/* harmony export */ });\nvar data = [{\n  id: 1,\n  name: 'Дети',\n  groups: [{\n    id: 2,\n    name: 'Все дети',\n    groups: []\n  }, {\n    id: 3,\n    name: 'Имеющие редкие заболевания',\n    groups: [{\n      id: 4,\n      name: 'Все редкие заболевания',\n      groups: []\n    }, {\n      id: 5,\n      name: 'Spina Bifida',\n      groups: []\n    }, {\n      id: 6,\n      name: 'Буллёзный эпидермолиз',\n      groups: []\n    }, {\n      id: 7,\n      name: 'Гемофилия',\n      groups: []\n    }, {\n      id: 8,\n      name: 'Миодистрофия Дюшенна',\n      groups: []\n    }, {\n      id: 9,\n      name: 'Муковисцидоз',\n      groups: []\n    }, {\n      id: 10,\n      name: 'Несовершенный остеогенез',\n      groups: []\n    }, {\n      id: 11,\n      name: 'Синдром Дауна',\n      groups: []\n    }, {\n      id: 12,\n      name: 'Синдром Лежена',\n      groups: []\n    }, {\n      id: 13,\n      name: 'Синдром Ретта',\n      groups: []\n    }, {\n      id: 14,\n      name: 'Эктодермальная ангидротическая дисплазия',\n      groups: []\n    }]\n  }, {\n    id: 15,\n    name: 'Имеющие тяжелые заболевания',\n    groups: [{\n      id: 16,\n      name: 'Туберкулез',\n      groups: []\n    }, {\n      id: 17,\n      name: 'Лейкимия',\n      groups: []\n    }]\n  }, {\n    id: 18,\n    name: 'С инвалидностью',\n    groups: []\n  }, {\n    id: 19,\n    name: 'ВИЧ-положительные',\n    groups: []\n  }, {\n    id: 20,\n    name: 'Мигранты и беженцы',\n    groups: []\n  }, {\n    id: 21,\n    name: 'Нуждающиеся в лечении',\n    groups: []\n  }, {\n    id: 22,\n    name: 'Онкобольные',\n    groups: []\n  }, {\n    id: 23,\n    name: 'Паллиативные больные',\n    groups: []\n  }, {\n    id: 24,\n    name: 'Перенесшие насилие',\n    groups: []\n  }, {\n    id: 25,\n    name: 'Перенесшие травлю',\n    groups: []\n  }, {\n    id: 26,\n    name: 'Пропавшие без вести и потерявшиеся',\n    groups: []\n  }, {\n    id: 27,\n    name: 'Сироты',\n    groups: []\n  }]\n}, {\n  id: 28,\n  name: 'Подростки',\n  groups: ['empty']\n}, {\n  id: 29,\n  name: 'Женщины',\n  groups: ['empty']\n}, {\n  id: 30,\n  name: 'Взрослые',\n  groups: ['empty']\n}, {\n  id: 31,\n  name: 'Пожилые',\n  groups: ['empty']\n}, {\n  id: 32,\n  name: 'Семьи',\n  groups: ['empty']\n}, {\n  id: 33,\n  name: 'Профессиональные сообщества',\n  groups: []\n}, {\n  id: 34,\n  name: 'Местные сообщества',\n  groups: []\n}, {\n  id: 35,\n  name: 'Религиозные общины',\n  groups: []\n}, {\n  id: 36,\n  name: 'Народности',\n  groups: ['empty']\n}, {\n  id: 37,\n  name: 'Населенные пункты',\n  groups: ['empty']\n}, {\n  id: 38,\n  name: 'Некоммерческий сектор',\n  groups: []\n}, {\n  id: 39,\n  name: 'Общество',\n  groups: []\n}, {\n  id: 40,\n  name: 'Животные',\n  groups: ['empty']\n}, {\n  id: 41,\n  name: 'Экология',\n  groups: ['empty']\n}];\n\n//# sourceURL=webpack:///./js/data.js?");
+
+/***/ }),
+
+/***/ "./js/helpers.js":
+/*!***********************!*\
+  !*** ./js/helpers.js ***!
+  \***********************/
+/*! namespace exports */
+/*! export changeListItemImage [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export createCheckboxItemSingle [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export createDropdownItem [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export getDomItem [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export openDropdown [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"getDomItem\": function() { return /* binding */ getDomItem; },\n/* harmony export */   \"createDropdownItem\": function() { return /* binding */ createDropdownItem; },\n/* harmony export */   \"createCheckboxItemSingle\": function() { return /* binding */ createCheckboxItemSingle; },\n/* harmony export */   \"changeListItemImage\": function() { return /* binding */ changeListItemImage; },\n/* harmony export */   \"openDropdown\": function() { return /* binding */ openDropdown; }\n/* harmony export */ });\nfunction getDomItem(selector) {\n  var item = document.querySelector(selector);\n  return item;\n}\nfunction createDropdownItem(data, parentElement) {\n  var html = \"\\n  <div class=\\\"list__item-wrapper\\\">\\n    <div class=\\\"list__item\\\" data-id=\\\"\".concat(data.id, \"\\\" data-name=\\\"dropdown\\\">\\n      <!-- \\u0414\\u043B\\u044F \\u0440\\u0430\\u0437\\u0432\\u043E\\u0440\\u0430\\u0447\\u0438\\u0432\\u0430\\u043D\\u0438\\u044F \\u0441\\u043F\\u0438\\u0441\\u043A\\u0430 \\u0434\\u043E\\u0431\\u0430\\u0432\\u0438\\u0442\\u044C \\u043A\\u043B\\u0430\\u0441\\u0441 list__selector-active -->\\n      <div class=\\\"list__selector\\\"></div>\\n      <p class=\\\"list__item-title\\\">\").concat(data.name, \"</p>\\n    </div>\\n    <p class=\\\"list__item-empty hide\\\">\\u0414\\u0430\\u043D\\u043D\\u044B\\u0435 \\u043E\\u0431 \\u044D\\u0442\\u043E\\u0439 \\u0433\\u0440\\u0443\\u043F\\u043F\\u0435 \\u043E\\u0442\\u0441\\u0443\\u0442\\u0432\\u0443\\u044E\\u0442</p>\\n  </div>\\n  \");\n  parentElement.firstElementChild.insertAdjacentHTML('beforeend', html);\n  return html;\n}\nfunction createCheckboxItemSingle(data, parentElement) {\n  var html = \"\\n  <div class=\\\"list__item-wrapper\\\">\\n    <div class=\\\"list__checkbox-item-single\\\" data-id=\\\"\".concat(data.id, \"\\\" data-name=\\\"checkbox\\\">\\n      <div class=\\\"list__checkbox\\\"></div>\\n      <p class=\\\"list__checkbox-title\\\">\").concat(data.name, \"</p>\\n    </div>\\n  </div>\\n  \");\n  parentElement.firstElementChild.insertAdjacentHTML('beforeend', html);\n}\nfunction changeListItemImage(targetItem, className) {\n  targetItem.firstElementChild.classList.toggle(className);\n}\nfunction openDropdown(targetItem, data, className) {\n  var targetData = data.find(function (item) {\n    return item.id === +targetItem.dataset.id;\n  });\n\n  if (targetData.groups[0] === 'empty' && !targetItem.firstElementChild.classList.contains(className)) {\n    targetItem.nextElementSibling.classList.remove('hide');\n  } else {\n    targetItem.nextElementSibling.classList.add('hide');\n  } // if (\n  //   targetData.groups[0] === 'empty' &&\n  //   targetItem.firstElementChild.classList.contains(className)\n  // ) {\n  //   targetItem.nextElementSibling.classList.add('hide');\n  //   console.log(targetItem);\n  // }\n\n}\n\n//# sourceURL=webpack:///./js/helpers.js?");
+
+/***/ }),
+
 /***/ "./js/index.js":
 /*!*********************!*\
   !*** ./js/index.js ***!
@@ -45,7 +79,7 @@ eval("\n\n__webpack_require__(/*! core-js/es6 */ \"../node_modules/core-js/es6/i
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/styles.scss */ \"./styles/styles.scss\");\n/* harmony import */ var _styles_header_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/header.scss */ \"./styles/header.scss\");\n/* harmony import */ var _styles_list_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/list.scss */ \"./styles/list.scss\");\n/* harmony import */ var _styles_footer_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/footer.scss */ \"./styles/footer.scss\");\n\n\n\n // Перенос изображений\n\n__webpack_require__(\"./images sync recursive \\\\.(png|jpg|svg|gif)$\");\n\n__webpack_require__(\"./fonts sync recursive \\\\.(ttf|woff|woff2)$\");\n\n//# sourceURL=webpack:///./js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/styles.scss */ \"./styles/styles.scss\");\n/* harmony import */ var _styles_header_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/header.scss */ \"./styles/header.scss\");\n/* harmony import */ var _styles_list_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/list.scss */ \"./styles/list.scss\");\n/* harmony import */ var _styles_footer_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/footer.scss */ \"./styles/footer.scss\");\n/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./data */ \"./js/data.js\");\n/* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./helpers */ \"./js/helpers.js\");\n\n\n\n\n\n\n\n\n\n\nvar list = (0,_helpers__WEBPACK_IMPORTED_MODULE_5__.getDomItem)('.list'); // Перенос изображений\n\n__webpack_require__(\"./images sync recursive \\\\.(png|jpg|svg|gif)$\");\n\n__webpack_require__(\"./fonts sync recursive \\\\.(ttf|woff|woff2)$\"); // Отрисовка элементов списка из массива данных\n\n\nfunction createList(data, list) {\n  data.forEach(function (dataItem) {\n    if (dataItem.groups.length) {\n      (0,_helpers__WEBPACK_IMPORTED_MODULE_5__.createDropdownItem)(dataItem, list);\n    } else {\n      (0,_helpers__WEBPACK_IMPORTED_MODULE_5__.createCheckboxItemSingle)(dataItem, list);\n    }\n  });\n}\n\ncreateList(_data__WEBPACK_IMPORTED_MODULE_4__.data, list);\ndocument.body.addEventListener('click', function (event) {\n  event.preventDefault();\n\n  if (event.target.dataset.name === 'dropdown') {\n    (0,_helpers__WEBPACK_IMPORTED_MODULE_5__.openDropdown)(event.target, _data__WEBPACK_IMPORTED_MODULE_4__.data, 'list__selector-active');\n    (0,_helpers__WEBPACK_IMPORTED_MODULE_5__.changeListItemImage)(event.target, 'list__selector-active');\n  }\n\n  if (event.target.dataset.name === 'checkbox') {\n    (0,_helpers__WEBPACK_IMPORTED_MODULE_5__.changeListItemImage)(event.target, 'list__checkbox-checked');\n  }\n});\n\n//# sourceURL=webpack:///./js/index.js?");
 
 /***/ }),
 
@@ -4178,6 +4212,18 @@ eval("var map = {\n\t\"./checked.png\": \"./images/checked.png\",\n\t\"./minus-b
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	!function() {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = function(exports, definition) {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	}();
+/******/ 	
 /******/ 	/* webpack/runtime/global */
 /******/ 	!function() {
 /******/ 		__webpack_require__.g = (function() {
