@@ -10,6 +10,7 @@ import { createCheckboxItemSingle } from './helpers';
 import { changeListItemImage } from './helpers';
 import { openAndCloseDropdown } from './helpers';
 import { openAndCloseNestedDropdown } from './helpers';
+import { setParentIdNestedElements } from './helpers';
 
 const list = getDomItem('.list');
 
@@ -19,6 +20,10 @@ require.context('../fonts', true, /\.(ttf|woff|woff2)$/);
 
 // Отрисовка элементов списка из массива данных
 
+// Добавить ID родителей дочерним элементам
+setParentIdNestedElements(data);
+
+// Отрисовать динамический список
 createList(data, list, createDropdownItem, createCheckboxItemSingle);
 
 document.body.addEventListener('click', (event) => {

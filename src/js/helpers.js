@@ -5,6 +5,7 @@ export function getDomItem(selector) {
   return item;
 }
 
+// Элементы для динамической отрисовки элементов списка
 export function createDropdownItem(data, parentElement) {
   const html = `
   <div class="list__item-wrapper">
@@ -61,7 +62,7 @@ export function createInsideCheckboxItem(data, placeToInsert) {
 
   data.forEach((item) => {
     html += `
-    <div class="list__inside-checkbox-item" data-id="${item.id}" data-name="inside-checkbox">
+    <div class="list__inside-checkbox-item" data-id="${item.id}" data-name="inside-checkbox" data-parent-id="${item.parentId}" data-top-level-id="${item.topLevelId}">
       <div class="list__inside-checkbox"></div>
       <p class="list__checkbox-title">${item.name}</p>
     </div>
@@ -71,10 +72,12 @@ export function createInsideCheckboxItem(data, placeToInsert) {
   placeToInsert.insertAdjacentHTML('afterbegin', html);
 }
 
+// Изменить картинку при клике на чекбокс или спойлер
 export function changeListItemImage(targetItem, className) {
   targetItem.firstElementChild.classList.toggle(className);
 }
 
+// Открыть спойлер
 export function openAndCloseDropdown(targetItem, data, className) {
   const targetData = data.find((item) => item.id === +targetItem.dataset.id);
 
@@ -146,4 +149,32 @@ export function openAndCloseNestedDropdown(targetItem, data, className) {
     targetItem.firstElementChild.classList.remove(className);
     targetItem.nextElementSibling.remove();
   }
+}
+
+// Добавить ID родителя и ID корневой группы вложенным элементам
+export function setParentIdNestedElements(data) {
+  const topLevelElementsWidthFilledGroups = getElementsWidthFilledGroups(data);
+
+  topLevelElementsWidthFilledGroups.forEach((parent) => {
+    const secondLevelElementsWidthFilledGroups = getElementsWidthFilledGroups(
+      parent.groups
+    );
+
+    secondLevelElementsWidthFilledGroups.forEach((nestedItem) => {
+      nestedItem.groups.forEach((checkbox) => {
+        checkbox.parentId = nestedItem.id;
+        checkbox.topLevelId = parent.id;
+      });
+    });
+  });
+}
+
+function getElementsWidthFilledGroups(data) {
+  const result = data.filter((item) => {
+    if (item.groups.length && item.groups[0] !== 'empty') {
+      return item;
+    }
+  });
+
+  return result;
 }
