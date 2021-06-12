@@ -49,15 +49,22 @@ document.body.addEventListener('click', (event) => {
       data,
       'list__inside-selector-active'
     );
+    markNestedGroups();
   }
 
   if (event.target.classList.contains('footer__button')) {
     showResult();
   }
+
+  if (
+    event.target.classList.contains('list__checkbox-item') &&
+    event.target.lastElementChild.textContent.toLowerCase() === 'все дети'
+  ) {
+    markNestedGroups();
+  }
 });
 
-// Временная функция
-
+// Подготовить результат
 function showResult() {
   const selectedInternalCheckboxes = getArrayDomItems(
     '.list__inside-checkbox-checked'
@@ -79,4 +86,23 @@ function showResult() {
   );
 
   console.log('groups: ', result);
+}
+
+// Отметить все вложенные группы
+function markNestedGroups() {
+  const allChildren = getDomItem('.list__checkbox-item');
+  const nestedGroups = getArrayDomItems('.list__inside-checkbox-item');
+
+  if (
+    allChildren &&
+    allChildren.firstElementChild.classList.contains('list__checkbox-checked')
+  ) {
+    nestedGroups.forEach((item) =>
+      item.firstElementChild.classList.add('list__inside-checkbox-checked')
+    );
+  } else {
+    nestedGroups.forEach((item) =>
+      item.firstElementChild.classList.remove('list__inside-checkbox-checked')
+    );
+  }
 }
