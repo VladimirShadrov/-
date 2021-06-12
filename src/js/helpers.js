@@ -5,6 +5,11 @@ export function getDomItem(selector) {
   return item;
 }
 
+export function getArrayDomItems(selector) {
+  const result = Array.from(document.querySelectorAll(selector));
+  return result;
+}
+
 // Элементы для динамической отрисовки элементов списка
 export function createDropdownItem(data, parentElement) {
   const html = `
@@ -62,7 +67,7 @@ export function createInsideCheckboxItem(data, placeToInsert) {
 
   data.forEach((item) => {
     html += `
-    <div class="list__inside-checkbox-item" data-id="${item.id}" data-name="inside-checkbox" data-parent-id="${item.parentId}" data-top-level-id="${item.topLevelId}">
+    <div class="list__inside-checkbox-item" data-id="${item.id}" data-name="inside-checkbox" data-parentId="${item.parentId}" data-topLevelId="${item.topLevelId}">
       <div class="list__inside-checkbox"></div>
       <p class="list__checkbox-title">${item.name}</p>
     </div>

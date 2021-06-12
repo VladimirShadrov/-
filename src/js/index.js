@@ -5,6 +5,7 @@ import '../styles/footer.scss';
 import { data } from './data';
 import { createList } from './helpers';
 import { getDomItem } from './helpers';
+import { getArrayDomItems } from './helpers';
 import { createDropdownItem } from './helpers';
 import { createCheckboxItemSingle } from './helpers';
 import { changeListItemImage } from './helpers';
@@ -49,4 +50,33 @@ document.body.addEventListener('click', (event) => {
       'list__inside-selector-active'
     );
   }
+
+  if (event.target.classList.contains('footer__button')) {
+    showResult();
+  }
 });
+
+// Временная функция
+
+function showResult() {
+  const selectedInternalCheckboxes = getArrayDomItems(
+    '.list__inside-checkbox-checked'
+  );
+  const selectedCheckboxes = getArrayDomItems('.list__checkbox-checked');
+
+  const result = [];
+
+  selectedInternalCheckboxes.forEach((item) => {
+    result.push(
+      +item.parentElement.dataset.id,
+      +item.parentElement.dataset.parentid,
+      +item.parentElement.dataset.toplevelid
+    );
+  });
+
+  selectedCheckboxes.forEach((item) =>
+    result.push(+item.parentElement.dataset.id)
+  );
+
+  console.log('groups: ', result);
+}
